@@ -2,6 +2,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 import google.generativeai as genai
 from config import TELEGRAM_TOKEN, GEMINI_API_KEY, GEMINI_MODEL
+from database import iniciar_db
 
 # Configurar Gemini
 genai.configure(api_key=GEMINI_API_KEY)
